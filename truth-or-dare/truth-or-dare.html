@@ -1,47 +1,28 @@
-<!--
-Copyright (c) 2024 LG Electronics Inc.
-
-SPDX-License-Identifier: Apache-2.0
--->
-
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>Party Games</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="./truth-or-dare.css">
+    <title>Party Games</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./truth-or-dare.css">
 </head>
-<script src="webOSTVjs-1.2.10/webOSTV.js" charset="utf-8"></script>
-<script src="webOSTVjs-1.2.10/webOSTV-dev.js" charset="utf-8"></script>
-<script type="text/javascript">
-	//sample code for calling LS2 API
-	webOS.service.request("luna://com.palm.systemservice", {
-		method: "clock/getTime",
-		parameters: {},
-		onSuccess: function (args) {
-			console.log("UTC:", args.utc);
-		},
-		onFailure: function (args) {
-			console.log("Failed to getTime");
-		}
-	});
-</script>
-
 <body>
-	<div class="content">
-		
-
-		<div class ="game">
-			<p id ="pregunta">joa</p>
-
-			<button>Truth</button>
-			<button>Dare</button>
-		</div>
-
-	</div>
-	
+    <div class="content">
+        <div class="game">
+            <div id="start-screen" class="screen">
+                <div class="card" id="truth-card">
+                    <span class="card-title">Truth</span>
+                </div>
+                <div class="card" id="dare-card" class="cartas">
+                    <span class="card-title">Dare</span>
+                </div>
+            </div>
+            <div id="result-screen" class="screen hidden">
+                <p id="prompt">Click a card to start</p>
+                <button id="play-again-button">Next</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="truth-or-dare.js"></script>
 </body>
-<script src="truth-or-dare.js"></script>
-
 </html>
