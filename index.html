@@ -1,0 +1,67 @@
+<!--
+Copyright (c) 2024 LG Electronics Inc.
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Party Games</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="index.css">
+</head>
+<script src="webOSTVjs-1.2.10/webOSTV.js" charset="utf-8"></script>
+<script src="webOSTVjs-1.2.10/webOSTV-dev.js" charset="utf-8"></script>
+
+<body>
+	<div class="content">
+		<nav class="nav-bar">
+			<ul class="items">
+				<li> <img src="./assets/home-icon.svg" alt=""> Home</li>
+				<li class="selected"> <img src="./assets/explore-icon-selected.svg" alt=""> Explore</li>
+			</ul>
+		</nav>
+
+		<div class="explore">
+			<div class="explore-bar">
+				<h2>Explore</h2>
+				<div class="filters">
+					<label class="search-bar">
+						<img src="./assets/search.svg" alt="">
+						<input type="text" placeholder="Search...">
+					</label>
+					<ul class="filter-list">
+						<li class="filter selected">All</li>
+						<li class="filter">Individual</li>
+						<li class="filter">Group</li>
+						<li class="filter">Hard</li>
+					</ul>
+					<ul class="language-list">
+						<li class="language">Spanish</li>
+						<li class="language">English</li>
+						<li class="language selected">International</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class ="games">
+				<div class="juego">
+					<img class="imagen-juego" src="assets/truth_or_dare.png"/>
+					<p class="titulo-juego">Truth or Dare</p>
+				</div>
+				<div class="juego">
+					<a href ="truth-or-dare/truth-or-dare.html">
+					<img class="imagen-juego" src="assets/truth_or_dare.png"/> </a>
+					<p class="titulo-juego">Truth or Dare</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+</body>
+<script src="./index.js"></script>
+
+</html>

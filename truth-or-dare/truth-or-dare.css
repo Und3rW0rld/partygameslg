@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-image: url('./assets/background.png');
+	background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
+	background-position: center; /* Centra la imagen */
+	background-repeat: no-repeat; /* Evita que la imagen se repita */
+	width: 100%;
+	height: 100%;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+	padding: 5.375rem 6.313rem;
+}
+
+
+.content{
+	background-color: rgba(13, 12, 15, .5);
+	width: 100%;
+	height: 100%;
+	border: #757575 solid 1px;
+	border-radius: 8px;
+	backdrop-filter: blur(5px);
+	box-shadow: #000000 0px 0px 10rem;
+	padding: 1.5rem;
+  
+}
+
+
+.game{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}

@@ -1,0 +1,10 @@
+{
+  "id": "com.ashen.partygames",
+  "version": "1.0.0",
+  "vendor": "My Company",
+  "type": "web",
+  "main": "index.html",
+  "title": "PartyGames",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png"
+}
