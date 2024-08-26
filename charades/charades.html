@@ -1,0 +1,48 @@
+<!--
+Copyright (c) 2024 LG Electronics Inc.
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Party Games</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="charades.css">
+</head>
+<script src="webOSTVjs-1.2.10/webOSTV.js" charset="utf-8"></script>
+<script src="webOSTVjs-1.2.10/webOSTV-dev.js" charset="utf-8"></script>
+
+<body>
+	<div class="content">
+		<div class="categories">
+			<h2>CATEGORIES</h2>
+			<div class="grid-container">
+        <div class="grid-item"><button class="movies-btn">MOVIES</butto></div>
+        <div class="grid-item"><button class="animals-btn">ANIMALS</button></div>
+        <div class="grid-item"><button class="professions-btn">PROFESSIONS</button></div>
+        <div class="grid-item"><button class="sports-btn">SPORTS</button></div>
+        <div class="grid-item"><button class="objects-btn">OBJECTS</button></div>
+        <div class="grid-item"><button class="superheros-btn">SUPERHEROS</button></div>
+    </div>
+		</div>
+		<div class="screen">
+			<h2 id="category-title"></h2>
+			<h2 id="screen-title"></h2>
+      <img id="screen-image" src="" alt="" style="display:none;">
+			<div class="buttons">
+				<button id="back" style="display:none;">Back</button>
+				<button id="next" style="display: none;">Next</button>
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+
+<script type="module" src="./charades.js"></script>
+
+
+</html>

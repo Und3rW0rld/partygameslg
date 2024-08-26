@@ -11,6 +11,10 @@
 
 }
 
+a{
+	text-decoration: none;
+}
+
 body {
 	background-image: url('./assets/background.png');
 	background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
@@ -148,6 +152,7 @@ html{
 .imagen-juego{
 	width: 19.375rem;
 	height: 12.5rem;
+	border-radius: 24px;
 }
 
 .titulo-juego{
