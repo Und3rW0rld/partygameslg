@@ -11,6 +11,10 @@
 
 }
 
+a{
+	text-decoration: none;
+}
+
 body {
 	background-image: url('./assets/background.png');
 	background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
@@ -56,6 +60,39 @@ html{
 	color: #FFFFFF;
 }
 
+.filters-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.select-layout{
+	display: flex;
+}
+
+.filters-container img{
+	padding: .5rem ;
+	transition: all .3s;
+}
+
+.filters-container img:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.filters-container .left{
+	background-color:#1CA1D0;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+
+}
+
+.filters-container .right{
+	background-color:#414249;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
 .filters {
 	display: flex;
 	gap: 1.5rem;
@@ -72,6 +109,15 @@ html{
 	height: fit-content;
 	font-size: 0.875rem;
 	color: rgba(255, 255, 255, 0.5);
+}
+
+.filters ul li {
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.filters ul li:hover {
+	color: #FFFFFF;
 }
 
 .filters ul .selected {
@@ -106,6 +152,7 @@ html{
 .imagen-juego{
 	width: 19.375rem;
 	height: 12.5rem;
+	border-radius: 24px;
 }
 
 .titulo-juego{
